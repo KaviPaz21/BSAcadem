@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/header'
 export default function Lessions() {
   return (
-    <div className='sm:ml-0 lg:ml-12 xl:ml-12'>
+    <div className='sm:ml-0 lg:ml-12 xl:ml-12 mt-24'>
       <Header head={"All Lessons"}/>
 
       <div className='grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 mx-6'>

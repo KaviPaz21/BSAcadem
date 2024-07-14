@@ -5,9 +5,9 @@ import Navbar from './components/navbar';
 
 const Layout = () => {
   return (
-    <div className='flex text-center h-screen overflow-hidden'>
-      <Navbar className="left-0 fixed z-20" />
-      <div className="ml-1 flex-1 overflow-auto">
+    <div className='flex text-center h-screen overflow-hidden ml-0'>
+      <Navbar className="top-0 fixed" />
+      <div className="flex-1 overflow-auto">
         <Outlet />
       </div>
     </div>

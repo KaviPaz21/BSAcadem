@@ -15,12 +15,12 @@ export default function Home() {
 
 
   return (
-    <div className='mx-2 my-8'>
-      <div className='text-left font-serif sm:text-center lg:text-left xl:text-left xl:mx-36 lg:mx-12 sm:mx-4'>
-        <div className='text-xl'>Wlecome Back</div>
-        <div className='text-2xl '>Pasindu Kavinda...</div>
+    <div className='mt-24 mx-4'>
+      <div className='text-left font-serif sm:text-center lg:text-left xl:text-left xl:mx-36 lg:mx-12 sm:mx-0'>
+        <span className='text-xl'>Wlecome Back </span>
+        <span className='text-2xl '> Pasindu Kavinda...</span>
       </div>
-      <div className='mt-12  bg-slate-100 xl:mx-32 lg:mx-12 sm:mx-4 rounded-2xl py-8'>
+      <div className='mt-5  bg-slate-100 xl:mx-32 lg:mx-12 sm:mx-4 rounded-2xl py-8'>
         <img src={logo} alt="logo" className='relative left-1/2 -translate-x-1/2 rounded-xl'/>
         <div className='py-4 text-5xl font-semibold'>Bandara Senarathne</div>
         <div className='grid gap-3 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mx-4'>

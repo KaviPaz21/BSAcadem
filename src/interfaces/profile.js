@@ -9,7 +9,7 @@ export default function Profile() {
   }
 
   return (
-    <div className='grid gap-8 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 sm:mx-4 lg:mx-12 xl:mx-20 mt-12'>
+    <div className='grid gap-8 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 sm:mx-4 lg:mx-12 xl:mx-20 mt-24'>
       <div className='bg-slate-100 px-4 py-5 rounded-xl mx-4 sm:h-auto lg:h-auto xl:h-ch800 overflow-auto'>
         <div className='w-40 h-40 rounded-full bg-slate-400 float-left '></div>
         <div className='py-12 font-semibold text-3xl'>Pasindu Kavinda Bandara</div>
