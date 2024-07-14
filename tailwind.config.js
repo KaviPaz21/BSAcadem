@@ -16,6 +16,9 @@ module.exports = {
         'c17':"17px",
         'c20':"20px"
       },
+      borderWidth:{
+        "1x":"1px"
+      },
       width:{
         "cw98":"98%",
         "cw96":"96%",

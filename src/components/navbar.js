@@ -22,7 +22,7 @@ const Navbar = () => {
             <Link to="/Profile"><div className={`${active===2 ? "bg-gray-400":"bg-gray-200"} hover:scale-105 duration-300 hover:bg-gray-300 p-1 rounded-xl my-5`} onClick={()=>setindication(2)}><img src={user} alt="home" className=' w-8 ' /></div></Link>
                 <Link to="/Lessions"><div className={`${active===3 ? "bg-gray-400":"bg-gray-200"} hover:scale-105 duration-300 hover:bg-gray-300 p-1 rounded-xl my-5`} onClick={()=>setindication(3)}><img src={lession} alt="home" className=' w-8 ' /></div></Link>
                 <div className={`${active===4 ? "bg-gray-400":"bg-gray-200"} hover:scale-105 duration-300 hover:bg-gray-300 p-1 rounded-xl my-5`} onClick={()=>setindication(4)}><img src={activation} alt="home" className=' w-8 ' /></div>
-                <div className={`${active===5 ? "bg-gray-400":"bg-gray-200"} hover:scale-105 duration-300 hover:bg-gray-300 p-1 rounded-xl my-5`} onClick={()=>setindication(5)}><img src={quiz} alt="home" className=' w-8 ' /></div>
+                <Link to="/Quiz"><div className={`${active===5 ? "bg-gray-400":"bg-gray-200"} hover:scale-105 duration-300 hover:bg-gray-300 p-1 rounded-xl my-5`} onClick={()=>setindication(5)}><img src={quiz} alt="home" className=' w-8 ' /></div></Link>
                 
             </div>
         </div>

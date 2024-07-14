@@ -4,6 +4,7 @@ import Layout from './layout';
 import Lessions from './interfaces/lessions';
 import Home from './interfaces/Home';
 import Profile from './interfaces/profile';
+import Quiz from './interfaces/quiz';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <Route path="Lessions" element={<Lessions />} />
           <Route path="Home" element={<Home />} />
           <Route path="Profile" element={<Profile />} />
+          <Route path="Quiz" element={<Quiz />} />
         </Route>
 
       </Routes>
