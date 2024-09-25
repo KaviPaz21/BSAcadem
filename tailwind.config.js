@@ -8,13 +8,15 @@ module.exports = {
       
       height:{
         '97':'96vh',
-        'ch800':'800px'
+        'ch800':'800px',
+        'c400':"700px",
       },
       fontSize:{
         'nv18':'18px',
         'c16':'16px',
         'c17':"17px",
-        'c20':"20px"
+        'c20':"20px",
+        
       },
       borderWidth:{
         "1x":"1px"
@@ -31,6 +33,9 @@ module.exports = {
       },
       animation: {
         'ease-in': 'easeIn 1s ease-in forwards',
+      },
+      fontFamily:{
+        'csans':"Open Sans"
       },
       keyframes: {
         easeIn: {

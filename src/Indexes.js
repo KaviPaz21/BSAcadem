@@ -1,0 +1,42 @@
+import React, { useState } from 'react'
+import Navbar from './components/navbar'
+import Dashboard from './components/Dashboard'
+import Helper from './components/helper'
+
+export default function Indexes() {
+  const [one , setone] =useState(true)
+  const [two , settwo] =useState(false)
+  const [three , setthree] =useState(false)
+  const [four , setfour] =useState(false)
+  const [five, setfive] =useState(false)
+  const [six , setsix] =useState(false)
+  const [seven , setseven] =useState(false)
+  const [eight , seteight] =useState(false)
+  
+  
+  const activateinterface =(K)=>{
+    setone(false)
+    settwo(false)
+    setthree(false)
+    setfour(false)
+    setfive(false)
+    setsix(false)
+    setseven(false)
+    seteight(false)
+    if(K===1){setone(true)}
+    else if(K===2){settwo(true)}
+    else if(K===3){settwo(true)}
+    else if(K===4){settwo(true)}
+    else if(K===5){settwo(true)}
+    else if(K===6){setsix(true)}
+    else if(K===7){settwo(true)}
+    else if(K===8){settwo(true)}
+  }
+  return (
+    <div className=''>
+      <div className='fixed z-20'><Navbar activateinterface = {activateinterface}/></div>
+      <div className={`${!one && "scale-0"} absolute w-11/12 ml-36 duration-300`}><Dashboard/></div>
+      <div className={`${!six && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Helper/></div>
+    </div>
+  )
+}
