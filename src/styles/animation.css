@@ -1,0 +1,54 @@
+.ball1{
+    animation: anm 1s infinite;
+}
+.ball2{
+    animation: anm2 1s infinite;
+}
+.ball3{
+    animation: anm3 1s infinite;
+}
+
+@keyframes anm {
+    0%{
+        background-color: gray;
+    }
+    33%{
+        background-color: blue;
+    }
+    66%{
+        background-color: gray;
+    }
+    100%{
+        background-color: gray;
+    }
+}
+@keyframes anm2 {
+    0%{
+        background-color: gray;
+    }
+    33%{
+        background-color: gray;
+    }
+    66%{
+        background-color: blue;
+    }
+    100%{
+        background-color: gray;
+    }
+}
+
+@keyframes anm3 {
+    0%{
+        background-color: gray;
+    }
+    33%{
+        background-color: gray;
+    }
+    66%{
+        background-color: gray;
+    }
+    90%{
+        background-color: blue;
+    }
+    
+}

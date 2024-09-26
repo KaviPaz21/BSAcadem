@@ -28,7 +28,8 @@ module.exports = {
         "cw93":"93%",
         "cw92":"92%",
         "cw80":"80%",
-        "cw500":"500px"
+        "cw500":"500px",
+        "cw900":"900px"
       
       },
       animation: {

@@ -32,11 +32,13 @@ export default function Indexes() {
     else if(K===7){settwo(true)}
     else if(K===8){settwo(true)}
   }
+
+  const root = "http://127.0.0.1:5000"
   return (
     <div className=''>
       <div className='fixed z-20'><Navbar activateinterface = {activateinterface}/></div>
       <div className={`${!one && "scale-0"} absolute w-11/12 ml-36 duration-300`}><Dashboard/></div>
-      <div className={`${!six && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Helper/></div>
+      <div className={`${!six && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Helper root = {root}/></div>
     </div>
   )
 }
