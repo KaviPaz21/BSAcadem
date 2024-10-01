@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Dash from "../images/dashboard.svg"
 import notification from "../images/nitification.svg"
-import course from "../images/submission.svg"
+import course from "../images/course.svg"
 import submission from "../images/submission.svg"
 import quiz from "../images/quiz.svg"
 import ai from "../images/ai.svg"
@@ -9,7 +9,7 @@ import payment from "../images/payment.svg"
 import user from "../images/user.svg"
 
 export default function Navbar({activateinterface}) {
-    const [exp, setexp] = useState(true)
+    const [exp, setexp] = useState(false)
     const [active , setactivecolumn] =  useState(1)
 
     const setactive =(K)=>{

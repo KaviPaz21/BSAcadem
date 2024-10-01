@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Navbar from './components/navbar'
 import Dashboard from './components/Dashboard'
 import Helper from './components/helper'
+import Notifications from './components/notifications'
+import Courses from './components/courses'
 
 export default function Indexes() {
   const [one , setone] =useState(true)
@@ -25,7 +27,7 @@ export default function Indexes() {
     seteight(false)
     if(K===1){setone(true)}
     else if(K===2){settwo(true)}
-    else if(K===3){settwo(true)}
+    else if(K===3){setthree(true)}
     else if(K===4){settwo(true)}
     else if(K===5){settwo(true)}
     else if(K===6){setsix(true)}
@@ -38,7 +40,10 @@ export default function Indexes() {
     <div className=''>
       <div className='fixed z-20'><Navbar activateinterface = {activateinterface}/></div>
       <div className={`${!one && "scale-0"} absolute w-11/12 ml-36 duration-300`}><Dashboard/></div>
+      <div className={`${!two && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Notifications root = {root}/></div>
+      <div className={`${!three && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Courses root = {root}/></div>
       <div className={`${!six && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Helper root = {root}/></div>
+      
     </div>
   )
 }
