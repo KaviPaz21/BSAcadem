@@ -4,6 +4,8 @@ import Dashboard from './components/Dashboard'
 import Helper from './components/helper'
 import Notifications from './components/notifications'
 import Courses from './components/courses'
+import Submission from './components/submission'
+import Quizs from './components/quizs'
 
 export default function Indexes() {
   const [one , setone] =useState(true)
@@ -28,8 +30,8 @@ export default function Indexes() {
     if(K===1){setone(true)}
     else if(K===2){settwo(true)}
     else if(K===3){setthree(true)}
-    else if(K===4){settwo(true)}
-    else if(K===5){settwo(true)}
+    else if(K===4){setfour(true)}
+    else if(K===5){setfive(true)}
     else if(K===6){setsix(true)}
     else if(K===7){settwo(true)}
     else if(K===8){settwo(true)}
@@ -42,6 +44,8 @@ export default function Indexes() {
       <div className={`${!one && "scale-0"} absolute w-11/12 ml-36 duration-300`}><Dashboard/></div>
       <div className={`${!two && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Notifications root = {root}/></div>
       <div className={`${!three && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Courses root = {root}/></div>
+      <div className={`${!four && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Submission root = {root}/></div>
+      <div className={`${!five && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Quizs root = {root}/></div>
       <div className={`${!six && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Helper root = {root}/></div>
       
     </div>

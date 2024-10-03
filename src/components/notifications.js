@@ -19,7 +19,7 @@ export default function Notifications({ root }) {
                 let i = 0
                 for (i = 0; i < notification.length; i++) {
                     res.push(
-                        <div className='mt-3 px-16 bg-slate-100 rounded-lg py-8  '>
+                        <div className='mt-3 px-16 bg-blue-100 rounded-lg py-8  '>
                             <div className='text-2xl font-semibold pb-5'>{notification[i][0]}</div>
                             <div className='pr-12 text-lg font-csans'>{notification[i][1]}</div>
                             <div className='font-csans font-bold text-sm pt-5 text-right pr-24'>Date :  {notification[i][2]}</div>
