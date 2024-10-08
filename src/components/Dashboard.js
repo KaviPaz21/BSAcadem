@@ -6,7 +6,7 @@ export default function Dashboard() {
   const date = new Date();
   const cdate = date.toLocaleDateString()
   return (
-    <div className='relative w-cw90 py-5'>
+    <div className='relative w-cw98 py-5'>
 
       <div className="justify-center mt-5">
         <div className='name_basics grid grid-cols-2 gap-5 px-12 w-full bg-gray-100 rounded-lg'>
