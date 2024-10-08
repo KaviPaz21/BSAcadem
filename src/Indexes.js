@@ -7,6 +7,7 @@ import Courses from './components/courses'
 import Submission from './components/submission'
 import Quizs from './components/quizs'
 import Payments from './components/payments'
+import Userdetails from './components/userdetails'
 
 export default function Indexes() {
   const [one , setone] =useState(true)
@@ -35,7 +36,7 @@ export default function Indexes() {
     else if(K===5){setfive(true)}
     else if(K===6){setsix(true)}
     else if(K===7){setseven(true)}
-    else if(K===8){settwo(true)}
+    else if(K===8){seteight(true)}
   }
 
   const root = "http://127.0.0.1:5000"
@@ -49,7 +50,7 @@ export default function Indexes() {
       <div className={`${!five && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Quizs root = {root}/></div>
       <div className={`${!six && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Helper root = {root}/></div>
       <div className={`${!seven && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Payments root = {root}/></div>
-      
+      <div className={`${!eight && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Userdetails root = {root}/></div>
     </div>
   )
 }
