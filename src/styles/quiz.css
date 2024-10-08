@@ -1,0 +1,41 @@
+@media(min-width:801px){
+    .qmenu{
+        width: 200px;
+        font-size: 20px;
+    }
+    .quizes{
+        gap: 10em;
+    }
+
+}
+
+
+@media(max-width:800px){
+    .qmenu{
+        width: 240px;
+        font-size: 20px;
+
+    }
+    .qtopic{
+        font-size: 40px;
+    }
+    .quizes{
+        gap: 2em;
+    }
+}
+
+
+
+@media(max-width:425px){
+    .qmenu{
+        width: 280px;
+        font-size: 20px;
+    }
+    .qtopic{
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    .quizes{
+        gap: 1em;
+    }
+}

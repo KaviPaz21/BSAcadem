@@ -19,6 +19,8 @@ module.exports = {
         'c750':"750px",
         'c600':"600px",
         'c500':"500px",
+        'c75':"75vh",
+        'c45':"45vh",
       },
       fontSize:{
         'nv18':'18px',

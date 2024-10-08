@@ -1,35 +1,35 @@
 import React, { useState } from 'react'
 import Gradings from './gradings'
+import '../styles/quiz.css'
 
 
 
 export default function Quizs() {
     const [active, setactive] = useState(1)
     return (
-        <div>
-            <div className='font-csans text-5xl py-5 w-full pl-16 bg-white shadow-lg shadow-gray-200'>Quizes and Tests</div>
-            <div className='flex mt-5' >
-                <div className='mr-5 w-cw20 bg-blue-500 rounded-lg h-c80 '>
-                    <div className={`${active === 1 ? "bg-blue-700" : "bg-blue-500"} subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(1)}>Quizes</div>
-                    <div className={`${active === 2 ? "bg-blue-700" : "bg-blue-500"} subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(2)}>Module Tests</div>
-                    <div className={`${active === 3 ? "bg-blue-700" : "bg-blue-500"} subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(3)}>Target Questions</div>
-                    <div className={`${active === 4 ? "bg-blue-700" : "bg-blue-500"} subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(4)}>Papers</div>
-
-                    <div className={`${active === 5 ? "bg-blue-700" : "bg-blue-500"} subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(5)}>Marks & Grades</div>
+        <div className='mx-2'>
+            <div className='qtopic font-csans text-5xl py-5 w-full pl-16 bg-white shadow-lg shadow-gray-200'>Quizes and Tests</div>
+            <div className='flex flex-wrap mt-5' >
+                <div className=' w-full bg-blue-500 rounded-lg text-center '>
+                    <div className={`${active === 1 ? "bg-blue-700" : "bg-blue-500"} qmenu subtp text-xl font-csans text-white py-2 hover:bg-blue-600 rounded-lg w-60 duration-300 inline-block`} onClick={() => setactive(1)}>Quizes</div>
+                    <div className={`${active === 2 ? "bg-blue-700" : "bg-blue-500"} qmenu subtp text-xl font-csans text-white py-2 hover:bg-blue-600 rounded-lg w-60 duration-300 inline-block`} onClick={() => setactive(2)}>Module Tests</div>
+                    <div className={`${active === 3 ? "bg-blue-700" : "bg-blue-500"} qmenu subtp text-xl font-csans text-white py-2 hover:bg-blue-600 rounded-lg w-60 duration-300 inline-block`} onClick={() => setactive(3)}>Target Questions</div>
+                    <div className={`${active === 4 ? "bg-blue-700" : "bg-blue-500"} qmenu subtp text-xl font-csans text-white py-2 hover:bg-blue-600 rounded-lg w-60 duration-300 inline-block`} onClick={() => setactive(4)}>Papers</div>
+                    <div className={`${active === 5 ? "bg-blue-700" : "bg-blue-500"} qmenu subtp text-xl font-csans text-white py-2 hover:bg-blue-600 rounded-lg w-60 duration-300 inline-block`} onClick={() => setactive(5)}>Marks & Grades</div>
 
                 </div>
 
-                <div className='w-cw80 h-c750 bg-slate-100 rounded-lg'>
+                <div className=' rounded-lg w-full'>
 
-                    <div className={`${active === 1 ? "block" : "hidden"} px-2 py-4 h-c400`}>
-                        <div className='overflow-auto h-c400'>
+                    <div className={`${active === 1 ? "block" : "hidden"} py-4 h-c400`}>
+                        <div className='overflow-auto h-c75 w-full'>
                             {(() => {
                                 const arr = []
                                 for (let i = 0; i < 5; i++) {
                                     arr.push(
                                         <div key={i} className='bg-blue-100 px-10 py-5 rounded-lg mb-5'>
                                             <div className='font-csans text-2xl'>Title : Module Quiz</div>
-                                            <div className='grid grid-cols-3'>
+                                            <div className='flex flex-wrap quizes'>
                                                 <div>
                                                     <div className='font-bold text-xl pt-5'>Coverings :</div>
                                                     <div className='pl-12'>
@@ -63,7 +63,7 @@ export default function Quizs() {
 
 
 
-                    <div className={`${active === 2 ? "block" : "hidden"} px-2 py-2 h-c400 ove`}>
+                    <div className={`${active === 2 ? "block" : "hidden"} py-2 h-c400 ove`}>
                         <div className='py-2 px-2 grid grid-cols-2 bg-blue-600 rounded-lg'>
                             <div className='text-xl text-white px-12 py-5'>Select Your Module Number</div>
                             <div className='text-xl text-white  px-10 py-5'>
@@ -118,7 +118,7 @@ export default function Quizs() {
 
 
 
-                    <div className={`${active === 3 ? "block" : "hidden"} px-2 py-2 h-c400 ove`}>
+                    <div className={`${active === 3 ? "block" : "hidden"}  py-2 h-c400 ove`}>
                         <div className='py-2 px-2 grid grid-cols-2 bg-blue-600 rounded-lg'>
                             <div className='text-xl text-white px-12 py-5'>Select Your Module Number</div>
                             <div className='text-xl text-white  px-10 py-5'>
@@ -174,7 +174,7 @@ export default function Quizs() {
 
 
 
-                    <div className={`${active === 4 ? "block" : "hidden"}  px-2 py-4 h-c400`}>
+                    <div className={`${active === 4 ? "block" : "hidden"} py-4 h-c400`}>
                         <div className='overflow-auto h-c400'>
                             {(() => {
                                 const arr = []
@@ -216,7 +216,7 @@ export default function Quizs() {
 
 
 
-                    <div className={`${active === 5 ? "block" : "hidden"}  px-2 py-4 h-c400`}>
+                    <div className={`${active === 5 ? "block" : "hidden"} py-4 h-c400`}>
                         <Gradings />
                     </div>
 

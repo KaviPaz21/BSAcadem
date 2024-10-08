@@ -29,7 +29,7 @@ export default function Courses() {
     }
   }
   return (
-    <div>
+    <div className='mx-2'>
       <div className={`${modulevisible ? "hidden" : "block"} font-csans text-4xl pl-16 py-5 w-full bg-white fixed shadow-sm shadow-gray-100`}>My Courses</div>
 
       <div className={`${modulevisible ? "hidden" : "flex"} pt-24  flex-wrap gap-10`}>

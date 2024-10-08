@@ -38,7 +38,7 @@ export default function Module({ no, modulesetter }) {
 
                     {//Lesson Peformance
                     }
-                    <div className={`${active === 1 ? "block" : "hidden"} `}>
+                    <div className={`${active === 1 ? "block" : "hidden"} h-c75 overflow-auto`}>
                         <div className='grid grid-cols-2 mt-5 gap-10'>
                             <div className={`${count > benchmark ? "bg-green-600" : "bg-red-500"} px-4 py-4  text-white rounded-lg`}>
                                 <div className='text-left text-2xl font-csans'>Overall Lesson Peformance</div>
@@ -57,7 +57,7 @@ export default function Module({ no, modulesetter }) {
                                 </div>
                             </div>
                         </div>
-                        <div className='grid grid-cols-3 gap-5'>
+                        <div className='frlex flex-wrap gap-5'>
                         <div className='mt-5 p-5 bg-blue-100 rounded-lg'>
                             <div className='text-left text-2xl font-csans'>Quizes</div>
                             <div className='pt-10'>
@@ -262,7 +262,7 @@ export default function Module({ no, modulesetter }) {
                             <input type="text" className='mt-5 w-full py-4 px-12 rounded-lg' placeholder=' type question here' />
                             <div className='mt-5 py-2 px-5 bg-blue-600 rounded-lg hover:scale-105 duration-300 w-fit text-white'>POST</div>
                         </div>
-                        <div className='w-full h-c500 mt-5 bg-blue-100 overflow-auto rounded-lg p-5'>
+                        <div className='w-full h-c45 mt-5 bg-blue-100 overflow-auto rounded-lg p-5'>
                             <table className='w-full'>
                             <tr className='bg-gray-300'>
                                     <td className='py-4 text-xl font-bold text-center'>Question</td>

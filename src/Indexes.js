@@ -45,7 +45,9 @@ export default function Indexes() {
       <div className='fixed z-20'><Navbar activateinterface = {activateinterface}/></div>
       <div className={`${!one && "scale-0"} element absolute w-11/12 ml-28 duration-300`}><Dashboard/></div>
       <div className={`${!two && "scale-0"} element absolute w-11/12  ml-28 duration-300`}><Notifications root = {root}/></div>
-      <div className={`${!three && "scale-0"} elementcourse absolute w-11/12  ml-28 duration-300`}><Courses root = {root}/></div>
+      <div className={`${!three && "scale-0"} element absolute w-11/12  ml-28 duration-300`}><Courses root = {root}/></div>
+      <div className={`${!four && "scale-0"} element absolute w-11/12  ml-28 duration-300`}><Submission root = {root}/></div>
+      <div className={`${!five && "scale-0"} element absolute w-11/12  ml-28 duration-300`}><Quizs root = {root}/></div>
     </div>
   )
 }
@@ -53,8 +55,8 @@ export default function Indexes() {
 
       
       
-      <div className={`${!four && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Submission root = {root}/></div>
-      <div className={`${!five && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Quizs root = {root}/></div>
+      
+      
       <div className={`${!six && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Helper root = {root}/></div>
       <div className={`${!seven && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Payments root = {root}/></div>
       <div className={`${!eight && "scale-0"} absolute w-11/12  ml-36 duration-300`}><Userdetails root = {root}/></div>

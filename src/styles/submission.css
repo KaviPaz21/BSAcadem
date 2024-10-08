@@ -1,0 +1,51 @@
+
+.sub_ins{grid-area: ins;}
+.sub_buttons{grid-area: but;}
+ol{
+    list-style-type:disc;
+}
+
+@media(min-width:801px){
+    .submission_placement{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0 ,1fr));
+        grid-template-areas: 'ins but';
+    }
+}
+
+@media(max-width:800px){
+    .submission_placement{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1,minmax(0 ,1fr));
+        grid-template-areas: 'ins' 'but';
+    }
+}
+
+
+
+@media(max-width:425px){
+    .submission_topic{
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    .submission_placement{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1,minmax(0 ,1fr));
+        grid-template-areas: 'ins' 'but';
+    }
+    .subm-topic{
+        font-size: 25px;
+        
+    }
+    .sub_ins{
+        padding-left: 5px;
+    }
+    .sub_consditions{
+        padding-left: 20px;
+    }
+    .submition_element{
+        padding-left: 10px;
+    }
+}

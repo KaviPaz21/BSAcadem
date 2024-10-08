@@ -12,7 +12,7 @@ export default function Notifications({ root }) {
         ["Notification title goes here", "Nootification Content Goes here...Nootification Content Goes here...Nootification Content Goes here...Nootification Content Goes here...Nootification Content Goes here...", "2024/09/30"]
     ]
     return (
-        <div className=''>
+        <div className='mx-2'>
             <div className='Ntopic font-csans text-5xl py-10 w-full pl-16  fixed bg-white shadow-lg shadow-gray-200'>Notifications</div>
             <div className='overflow-auto pt-32'>
             {(() => {
