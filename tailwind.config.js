@@ -5,7 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      screens: {
+        'xs': '320px',   // Custom for 320px
+        'sm-xs': '375px', // Custom for 375px
+        'sm-md': '420px', // Custom for 420px
+        'md': '768px',    // Custom for 768px
+      },
       height:{
         '97':'96vh',
         'c80':'82vh',

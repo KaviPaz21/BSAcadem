@@ -1,0 +1,37 @@
+@media(min-width:1440px){
+
+}
+@media(max-width:1439px){
+
+}
+
+
+
+
+
+@media(max-width:768px){
+    .navbar{
+        width: 60px;
+    }
+    .logoname , .button{
+        display: none;
+    }
+    .trimmed{
+        margin-left: 5px;
+    }
+}
+
+@media(max-width:425px){
+    .navbar{
+        width: 45px;
+    }
+    .logoname , .button{
+        display: none;
+    }
+    .trimmed{
+        margin-left: 3px;
+    }
+    .shortnav img{
+        width: 40px;
+    }
+}

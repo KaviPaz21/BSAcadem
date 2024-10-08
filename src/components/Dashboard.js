@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../styles/dashboard.css'
 
 
 export default function Dashboard() {
@@ -9,10 +9,10 @@ export default function Dashboard() {
     <div className='relative w-cw98 py-5'>
 
       <div className="justify-center mt-5">
-        <div className='grid grid-cols-2 gap-5 px-12 w-full bg-gray-100 rounded-lg'>
+        <div className='name_basics grid grid-cols-2 gap-5 px-12 w-full bg-gray-100 rounded-lg'>
           <div>
-            <div className='pt-5 text-2xl'>Welcome User....</div>
-            <div className='pb-5 pt-2 text-5xl'>Pasindu Kavinda Bandara</div>
+            <div className='pt-5 text-2xl welcome'>Welcome User....</div>
+            <div className='pb-5 pt-2 text-5xl uname'>Pasindu Kavinda Bandara</div>
           </div>
           <div className='my-5'>
             <div className='text-center text-xl bg-gray-300 py-2 rounded-md mb-3'>Date - {cdate}</div>
