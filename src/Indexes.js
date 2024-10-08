@@ -8,7 +8,7 @@ import Submission from './components/submission'
 import Quizs from './components/quizs'
 import Payments from './components/payments'
 import Userdetails from './components/userdetails'
-
+import './styles/index.css'
 export default function Indexes() {
   const [one , setone] =useState(true)
   const [two , settwo] =useState(false)
@@ -43,7 +43,7 @@ export default function Indexes() {
   return (
     <div className=''>
       <div className='fixed z-20'><Navbar activateinterface = {activateinterface}/></div>
-      <div className={`${!one && "scale-0"} absolute w-11/12 ml-28 duration-300`}><Dashboard/></div>
+      <div className={`${!one && "scale-0"} element absolute w-11/12 ml-28 duration-300`}><Dashboard/></div>
       
     </div>
   )

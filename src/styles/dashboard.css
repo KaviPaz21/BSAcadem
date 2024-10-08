@@ -1,3 +1,48 @@
-@media(min-width:1440px){
+
+
+
+
+
+.welcome{grid-area: wel;}
+.uname{grid-area: uname;}
+.basedetail{grid-area: bsd;}
+
+.works{grid-area: wrk;}
+.announcements{grid-area: anos;}
+
+@media(min-width:426px){
+    .dash_sec_two{
+
+        display: grid;
+        grid-template-areas: 'wrk anos';
+    }
+
+}
+@media(max-width:425px){
+    .name_basics{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0 ,1fr));
+        grid-template-areas: 'wel' 'uname' 'bsd';
+    }
+    .uname{
+        font-size: 40px;
+    }
+
+    .dash_sec_two{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0 ,1fr));
+        grid-template-areas: 'wrk' 'anos';
+    }
+    .hallnames{
+        flex-direction: column-reverse;
+        
+    }
+    .hall{
+        width: 280px;
+    }
+
     
+
 }

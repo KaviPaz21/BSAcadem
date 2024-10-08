@@ -6,7 +6,7 @@ export default function Dashboard() {
   const date = new Date();
   const cdate = date.toLocaleDateString()
   return (
-    <div className='relative w-cw98 py-5'>
+    <div className='relative w-cw90 py-5'>
 
       <div className="justify-center mt-5">
         <div className='name_basics grid grid-cols-2 gap-5 px-12 w-full bg-gray-100 rounded-lg'>
@@ -25,8 +25,8 @@ export default function Dashboard() {
         <div className='px-12 w-full bg-gray-100 rounded-lg mt-5'>
 
 
-          <div className='grid grid-cols-2 gap-5'>
-            <div>
+          <div className='dash_sec_two grid grid-cols-2 gap-5 '>
+            <div className='works'>
               <div className='py-5 text-2xl'>TOP Priority Works</div>
               <div className='text-left text-xl bg-blue-300 py-2 px-4 rounded-md mb-3 h-24'>
                 <div className='text-normal '>Task 01</div>
@@ -42,7 +42,7 @@ export default function Dashboard() {
               </div>
             </div>
 
-            <div>
+            <div className='announcements'>
               <div className='py-5 text-2xl'>Announcements</div>
               <div className='text-left px-4 text-xl bg-blue-200 py-2 rounded-md mb-3 h-52 overflow-auto'>
                 <div className='text-normal '>Task 02</div>
@@ -83,16 +83,16 @@ export default function Dashboard() {
         <div className='pt-2 font-semibold text-xl'>☎ +94 71 555 5555</div>
         <div className='pt-2 font-semibold text-xl'>🌍 <a href="https://bsacademy.netlify.app/">https://bsacademy.netlify.app/</a></div>
 
-        <div className='flex justify-center py-5'>
-          <div className='py-2 mx-5 my-3  w-80 bg-blue-700 text-white rounded-md'>
+        <div className='hallnames  flex justify-center py-5'>
+          <div className='hall py-2 mx-5 my-3  w-80 bg-blue-700 text-white rounded-md'>
             <div className='text-2xl font-semibold'>Expertexion</div>
             <div>▼ Kesbewa</div>
           </div>
-          <div className='py-2 mx-5 my-3  w-80 bg-blue-700 text-white rounded-md'>
+          <div className='hall py-2 mx-5 my-3  w-80 bg-blue-700 text-white rounded-md'>
             <div className='text-2xl font-semibold'>Sigma</div>
             <div>▼ Wellawaya</div>
           </div>
-          <div className='py-2 mx-5 my-3  w-80 bg-blue-700 text-white rounded-md'>
+          <div className='hall py-2 mx-5 my-3  w-80 bg-blue-700 text-white rounded-md'>
             <div className='text-2xl font-semibold'>Minacra</div>
             <div>▼ Hanwella</div>
           </div>
