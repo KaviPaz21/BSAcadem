@@ -1,6 +1,7 @@
-@media(max-width:700px) {
+@media(max-width:800px) {
+    
     .element{
-        margin-left: 55px;
+        margin-left: 65px;
     }
 }
 @media(max-width:425px) {

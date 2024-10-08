@@ -1,0 +1,47 @@
+@media(min-width:801px){
+    .chathistry{
+        display: block;
+    }
+}
+
+@media(max-width:800px){
+    .agent_name{padding-left: 40px;}
+    .chat{
+        width: 100%;
+    }
+    .chathistry{
+        display: none;
+    }
+    .chat-title-button{
+        display: block;
+    }
+}
+
+
+@media(max-width:425px){
+    .agent_name{
+        font-size: 25px;
+        padding-left: 20px;}
+    .chat{
+        width: 100%;
+    }
+    .chathistry{
+        display: none;
+    }
+    .chat-title-button{
+        display: none;
+    }
+    .msgs{
+        padding: 5px;
+        text-align: justify;
+        font-size: small;
+    }
+    .allchats{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .inputs{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
