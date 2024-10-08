@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/quiz.css'
 
 export default function Gradings() {
 
@@ -15,7 +16,7 @@ export default function Gradings() {
 
             <div className={`${active === 1 ? "block" : "hidden"}`}>
                 <div className='py-5 bg-purple-500 mt-10 grid grid-cols-2 px-12 text-white rounded-lg'>
-                    <div className='text-2xl'>Overall Quiz Marks : </div>
+                    <div className='text-2xl marktopic '>Overall Quiz Marks : </div>
                     <div className='text-3xl text-right'>92%</div>
                 </div>
                 <div className='h-c500 w-full overflow-auto'>
@@ -55,7 +56,7 @@ export default function Gradings() {
 
             <div className={`${active === 2 ? "block" : "hidden"}`}>
                 <div className='py-5 bg-purple-500 mt-10 grid grid-cols-2 px-12 text-white rounded-lg'>
-                    <div className='text-2xl'>Overall Module Test Marks : </div>
+                    <div className='text-2xl marktopic'>Overall Module Test Marks : </div>
                     <div className='text-3xl text-right'>79%</div>
                 </div>
                 <div className='h-c500 w-full overflow-auto'>
@@ -94,7 +95,7 @@ export default function Gradings() {
 
             <div className={`${active === 3 ? "block" : "hidden"}`}>
                 <div className='py-5 bg-purple-500 mt-10 grid grid-cols-2 px-12 text-white rounded-lg'>
-                    <div className='text-2xl'>Overall Target Question Marks : </div>
+                    <div className='text-2xl marktopic'>Overall Target Question Marks : </div>
                     <div className='text-3xl text-right'>85%</div>
                 </div>
                 <div className='h-c500 w-full overflow-auto'>
@@ -133,7 +134,7 @@ export default function Gradings() {
 
             <div className={`${active === 4 ? "block" : "hidden"}`}>
                 <div className='py-5 bg-purple-500 mt-10 grid grid-cols-2 px-12 text-white rounded-lg'>
-                    <div className='text-2xl'>Overall Paper Marks : </div>
+                    <div className='text-2xl marktopic'>Overall Paper Marks : </div>
                     <div className='text-3xl text-right'>74%</div>
                 </div>
                 <div className='h-c500 w-full overflow-auto'>

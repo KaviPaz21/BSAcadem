@@ -64,10 +64,10 @@ export default function Quizs() {
 
 
                     <div className={`${active === 2 ? "block" : "hidden"} py-2 h-c400 ove`}>
-                        <div className='py-2 px-2 grid grid-cols-2 bg-blue-600 rounded-lg'>
-                            <div className='text-xl text-white px-12 py-5'>Select Your Module Number</div>
-                            <div className='text-xl text-white  px-10 py-5'>
-                                <select name="cars" id="cars" className='bg-blue-500 py-1 px-5 rounded-lg'>
+                        <div className='py-2 px-2 flex flex-wrap bg-purple-600 rounded-lg quizes'>
+                            <div className='module_selector text-xl text-white px-12 py-2'>Select Your Module Number</div>
+                            <div className='text-xl text-black  px-10 py-2'>
+                                <select name="cars" id="cars" className='bg-white py-1 px-5 rounded-lg'>
                                     <option value="volvo">Lesson 01</option>
                                     <option value="volvo">Lesson 02</option>
                                     <option value="volvo">Lesson 03</option>
@@ -90,8 +90,8 @@ export default function Quizs() {
                                     arr.push(
                                         <div className='mb-5 w-full px-2 py-4 rounded-lg bg-blue-100 h-c700 overflow-auto'>
                                             <div className='text-xl font-bold'>Module Test ID : M1001-1</div>
-                                            <div className='grid grid-cols-2'>
-                                                <div className='pl-12 pt-5'>
+                                            <div className='papers grid grid-cols-2'>
+                                                <div className='papser_instruction pl-12 pt-5 paper_dis'>
                                                     <div className='font-semibold text-lg'>Instriuctions.</div>
                                                     <div> - Answer in a Seperate paper clearly.</div>
                                                     <div> - on that paper clearly state your index no, name , a/l year and hall location</div>
@@ -99,7 +99,7 @@ export default function Quizs() {
                                                     <div> - then upload it into corresponding Upload link at ADD SUBMISSION page</div>
                                                 </div>
 
-                                                <div className='text-lg text-white py-2 px-10 bg-blue-600 rounded-lg hover:scale-105 duration-300 w-fit h-fit'>Download Paper</div>
+                                                <div className='paper_btn text-lg text-white py-2 px-10 bg-blue-600 rounded-lg hover:scale-105 duration-300 w-fit h-fit'>Download Paper</div>
 
                                             </div>
                                         </div>
@@ -119,10 +119,10 @@ export default function Quizs() {
 
 
                     <div className={`${active === 3 ? "block" : "hidden"}  py-2 h-c400 ove`}>
-                        <div className='py-2 px-2 grid grid-cols-2 bg-blue-600 rounded-lg'>
-                            <div className='text-xl text-white px-12 py-5'>Select Your Module Number</div>
-                            <div className='text-xl text-white  px-10 py-5'>
-                                <select name="cars" id="cars" className='bg-blue-500 py-1 px-5 rounded-lg'>
+                        <div className='py-2 px-2 flex flex-wrap bg-purple-600 rounded-lg quizes'>
+                            <div className='module_selector text-xl text-white px-12 py-2'>Select Your Module Number</div>
+                            <div className='text-xl text-black  px-10 py-2'>
+                                <select name="cars" id="cars" className='bg-white py-1 px-5 rounded-lg'>
                                     <option value="volvo">Lesson 01</option>
                                     <option value="volvo">Lesson 02</option>
                                     <option value="volvo">Lesson 03</option>
@@ -145,16 +145,16 @@ export default function Quizs() {
                                     arr.push(
                                         <div className='mb-5 w-full px-2 py-4 rounded-lg bg-blue-100 h-c700 overflow-auto'>
                                             <div className='text-xl font-bold'>Target Question ID : TQ100{i + 1}</div>
-                                            <div className='grid grid-cols-2'>
+                                            <div className='papers grid grid-cols-2'>
                                                 <div className='pl-12 pt-5'>
-                                                    <div className='font-semibold text-lg'>Instriuctions.</div>
+                                                    <div className='papser_instruction font-semibold text-lg'>Instriuctions.</div>
                                                     <div> - Answer in a Seperate paper clearly.</div>
                                                     <div> - on that paper clearly state your index no, name , a/l year and hall location</div>
                                                     <div> - using a scannar or your mobile and create a pdf file of that answered file</div>
                                                     <div> - then upload it into corresponding Upload link at ADD SUBMISSION page</div>
                                                 </div>
 
-                                                <div className='text-lg text-white py-2 px-10 bg-blue-600 rounded-lg hover:scale-105 duration-300 w-fit h-fit'>Download Paper</div>
+                                                <div className='paper_btn text-lg text-white py-2 px-10 bg-blue-600 rounded-lg hover:scale-105 duration-300 w-fit h-fit'>Download Paper</div>
 
                                             </div>
                                         </div>

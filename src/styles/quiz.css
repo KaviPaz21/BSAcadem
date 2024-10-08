@@ -1,3 +1,7 @@
+.paper_dis{grid-area: dis;}
+.paper_btn{grid-area: btn;}
+.papser_instruction{grid-area: ins;}
+
 @media(min-width:801px){
     .qmenu{
         width: 200px;
@@ -37,5 +41,16 @@
     }
     .quizes{
         gap: 1em;
+    }
+    .module_selector{
+        font-size: 18px;
+    }
+    .papers{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-areas: 'ins' 'btn';
+    }
+    .marktopic{
+        font-size: 16px;
     }
 }
