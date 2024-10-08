@@ -24,12 +24,12 @@ export default function Module({ no, modulesetter }) {
             </div>
             <div className='flex'>
                 <div className='mr-5 w-cw20 bg-blue-500 rounded-lg h-c80 '>
-                    <div className={`${active === 1 ? "bg-blue-700" : "bg-blue-500"} subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(1)}>Lesson Peformance</div>
-                    <div className={`${active === 2 ? "bg-blue-700" : "bg-blue-500"} subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(2)}>PDF Documents</div>
-                    <div className={`${active === 3 ? "bg-blue-700" : "bg-blue-500"} subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(3)}>Recording Links</div>
-                    <div className={`${active === 4 ? "bg-blue-700" : "bg-blue-500"} subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(4)}>Practicals</div>
+                    <div className={`${active === 1 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(1)}>Lesson Peformance</div>
+                    <div className={`${active === 2 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(2)}>PDF Documents</div>
+                    <div className={`${active === 3 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(3)}>Recording Links</div>
+                    <div className={`${active === 4 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(4)}>Practicals</div>
 
-                    <div className={`${active === 5 ? "bg-blue-700" : "bg-blue-500"} subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(5)}>Forms</div>
+                    <div className={`${active === 5 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(5)}>Forms</div>
                     <div className={` subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => modulesetter()}>Back</div>
                 </div>
                 <div className='bg-slate-100 w-cw80 rounded-lg py-5 px-12 '>
