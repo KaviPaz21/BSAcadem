@@ -8,7 +8,7 @@ export default function Dashboard() {
   return (
     <div className='relative w-cw98 py-5 mx-2'>
 
-      <div className="justify-center mt-5">
+      <div className="justify-center">
         <div className='name_basics grid grid-cols-2 gap-5 px-12 w-full bg-gray-100 rounded-lg'>
           <div>
             <div className='pt-5 text-2xl welcome'>Welcome User....</div>

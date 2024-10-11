@@ -1,0 +1,24 @@
+.payments{grid-area: pay;}
+.pwchanges{grid-area: pwc;}
+
+@media(min-width:801px){
+    .detailbox{
+        width: 100%;
+        display: grid;
+        grid-template-areas: "pay pwc";
+        grid-gap: 5em;
+    }
+}
+
+
+
+@media(max-width:800px){
+    .utopic{
+        font-size: 27px;
+    }
+    .detailbox{
+        width: 100%;
+        display: grid;
+        grid-template-areas: "pay" "pwc";
+    }
+}

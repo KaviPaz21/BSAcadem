@@ -1,56 +1,57 @@
 import React from 'react'
+import '../styles/udetail.css'
 
 export default function Userdetails() {
   return (
     <div>
-      <div className='grid grid-cols-2 gap-10 w-full my-10'>
-        <div className='w-full bg-slate-100 rounded-lg' >
-          <div className='bg-blue-600 text-white w-full rounded-lg  py-4 px-12 text-3xl'>User Info</div>
+      <div className='detailbox  w-full my-10'>
+        <div className='payments w-full bg-slate-100 rounded-lg' >
+          <div className='utopic bg-blue-600 text-white w-full rounded-lg  py-4 pl-12 text-3xl'>User Info</div>
           <div className='h-c750 overflow-auto'>
             <table className='w-full mt-10'>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>Name with Initials</td>
-                <td className='py-4 text-lg px-10  font-csans'>K Bandara</td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>Name with Initials</td>
+                <td className='py-4 text-lg pl-10  font-csans'>K Bandara</td>
               </tr>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>Full Name</td>
-                <td className='py-4 text-lg px-10  font-csans'>Kavinda Bandara</td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>Full Name</td>
+                <td className='py-4 text-lg pl-10  font-csans'>Kavinda Bandara</td>
               </tr>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>Email Address</td>
-                <td className='py-4 text-lg px-10  font-csans'>Kavinda Bandara</td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>Email Address</td>
+                <td className='py-4 text-lg pl-10  font-csans'>Kavinda Bandara</td>
               </tr>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>Gender</td>
-                <td className='py-4 text-lg px-10  font-csans'></td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>Gender</td>
+                <td className='py-4 text-lg pl-10  font-csans'></td>
               </tr>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>Birthday</td>
-                <td className='py-4 text-lg px-10  font-csans'></td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>Birthday</td>
+                <td className='py-4 text-lg pl-10  font-csans'></td>
               </tr>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>School</td>
-                <td className='py-4 text-lg px-10  font-csans'></td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>School</td>
+                <td className='py-4 text-lg pl-10  font-csans'></td>
               </tr>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>A/L Year</td>
-                <td className='py-4 text-lg px-10  font-csans'>Kavinda Bandara</td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>A/L Year</td>
+                <td className='py-4 text-lg pl-10  font-csans'>Kavinda Bandara</td>
               </tr>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>Home Address</td>
-                <td className='py-4 text-lg px-10  font-csans'>Kavinda Bandara</td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>Home Address</td>
+                <td className='py-4 text-lg pl-10  font-csans'>Kavinda Bandara</td>
               </tr>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>NIC</td>
-                <td className='py-4 text-lg px-10  font-csans'>Kavinda Bandara</td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>NIC</td>
+                <td className='py-4 text-lg pl-10  font-csans'>Kavinda Bandara</td>
               </tr>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>Class Hall Name</td>
-                <td className='py-4 text-lg px-10  font-csans'>Kavinda Bandara</td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>Class Hall Name</td>
+                <td className='py-4 text-lg pl-10  font-csans'>Kavinda Bandara</td>
               </tr>
               <tr>
-                <td className='py-4 text-lg px-10 font-semibold font-csans'>Phone Number</td>
-                <td className='py-4 text-lg px-10  font-csans'>Kavinda Bandara</td>
+                <td className='py-4 text-lg pl-10 font-semibold font-csans'>Phone Number</td>
+                <td className='py-4 text-lg pl-10  font-csans'>Kavinda Bandara</td>
               </tr>
 
             </table>
@@ -60,9 +61,9 @@ export default function Userdetails() {
 
 
 
-        <div className='w-full bg-slate-100 rounded-lg'>
-          <div className='bg-blue-600 text-white w-full rounded-lg  py-4 px-12 text-3xl'>Password Change</div>
-          <div className='mx-5'>
+        <div className='pwchanges w-full bg-slate-100 rounded-lg'>
+          <div className='bg-blue-600 text-white w-full rounded-lg  py-4 pl-12 text-3xl'>Password Change</div>
+          <div className='ml-5'>
             <table className='w-full mt-10 '>
               <tr>
                 <td className='pl-16 py-5 text-lg font-semibold font-csans'>Currnet Passoword</td>
@@ -70,7 +71,7 @@ export default function Userdetails() {
               </tr>
               <tr>
                 <td className='pl-16 py-5 text-lg font-semibold font-csans'>New Passoword</td>
-                <td> <input type="password" className='w-full py-4 px-10' placeholder='enter your new password'/></td>
+                <td> <input type="password" className='w-full py-4 px-10' placeholder='enter your new password' /></td>
               </tr>
               <tr>
                 <td className='pl-16 py-5 text-lg font-semibold font-csans'>Confirm Passowrd</td>

@@ -1,0 +1,23 @@
+.payhistry{grid-area: his;}
+.lmsactive{grid-area: act;}
+
+@media(min-width:801px){
+    .paydetails{
+        width: 100%;
+        display: grid;
+        grid-template-areas: "his act";
+    }
+}
+
+
+
+@media(max-width:800px){
+    .paytopic{
+        font-size: 27px;
+    }
+    .paydetails{
+        width: 100%;
+        display: grid;
+        grid-template-areas: "his" "act";
+    }
+}
