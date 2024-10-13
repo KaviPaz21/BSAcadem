@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/moduledetails.css'
 
 export default function Module({ no, modulesetter }) {
     const count = 95
@@ -18,33 +19,33 @@ export default function Module({ no, modulesetter }) {
     const [active, setactive] = useState(1)
     return (
         <div>
-            <div className={`font-csans text-xl pl-16 py-4 w-full bg-white absolute top-5 shadow-md shadow-gray-400`}>
+            <div className={`font-csans text-xl pl-16 py-4 w-full bg-white absolute top-0 shadow-md shadow-gray-400`}>
                 <div>My Courses &#10148; {modules[module]} </div>
-                <div className='absolute top-2 right-10 py-2 bg-blue-600 px-9 text-white hover:scale-105 duration-200 rounded-lg cursor-pointer' onClick={() => modulesetter()}>back</div>
+                <div className='topback absolute top-2 right-10 py-2 bg-blue-600 px-9 text-white hover:scale-105 duration-200 rounded-lg cursor-pointer' onClick={() => modulesetter()}>back</div>
             </div>
-            <div className='flex'>
-                <div className='mr-5 w-cw20 bg-blue-500 rounded-lg h-c80 '>
-                    <div className={`${active === 1 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(1)}>Lesson Peformance</div>
-                    <div className={`${active === 2 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(2)}>PDF Documents</div>
-                    <div className={`${active === 3 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(3)}>Recording Links</div>
-                    <div className={`${active === 4 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(4)}>Practicals</div>
+            <div className='containers flex '>
+                <div className='modulenavigaor mr-5 w-cw20 bg-blue-500 rounded-lg h-c80 '>
+                    <div className={`${active === 1 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 pl-7 rounded-lg duration-300`} onClick={() => setactive(1)}>Lesson Peformance</div>
+                    <div className={`${active === 2 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 pl-7 rounded-lg duration-300`} onClick={() => setactive(2)}>PDF Documents</div>
+                    <div className={`${active === 3 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 pl-7 rounded-lg duration-300`} onClick={() => setactive(3)}>Recording Links</div>
+                    <div className={`${active === 4 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 pl-7 rounded-lg duration-300`} onClick={() => setactive(4)}>Practicals</div>
 
-                    <div className={`${active === 5 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => setactive(5)}>Forms</div>
-                    <div className={` subtp text-xl font-csans text-white py-5 hover:bg-blue-600 px-12 rounded-lg duration-300`} onClick={() => modulesetter()}>Back</div>
+                    <div className={`${active === 5 ? "bg-blue-700" : "bg-blue-500"} subtp text-lg font-csans text-white py-5 hover:bg-blue-600 px-7 rounded-lg duration-300`} onClick={() => setactive(5)}>Forms</div>
+                    <div className={`  text-xl font-csans text-white py-5 bg-purple-800 px-7 rounded-lg duration-300`} onClick={() => modulesetter()}>Back</div>
                 </div>
-                <div className='bg-slate-100 w-cw80 rounded-lg py-5 px-12 '>
+                <div className='displaycontentsofcourses bg-slate-100 w-cw80 rounded-lg py-5 px-2 '>
 
 
 
                     {//Lesson Peformance
                     }
-                    <div className={`${active === 1 ? "block" : "hidden"} h-c75 overflow-auto`}>
-                        <div className='grid grid-cols-2 mt-5 gap-10'>
-                            <div className={`${count > benchmark ? "bg-green-600" : "bg-red-500"} px-4 py-4  text-white rounded-lg`}>
+                    <div className={`${active === 1 ? "block" : "hidden"} h-c75 overflow-auto `}>
+                        <div className='lessonsum mt-5 gap-10 w-full'>
+                            <div className={`${count > benchmark ? "bg-green-600" : "bg-red-500"} counts px-4 py-4  text-white rounded-lg`}>
                                 <div className='text-left text-2xl font-csans'>Overall Lesson Peformance</div>
                                 <div className='text-center py-5 text-8xl font-semibold '>{count}%</div>
                             </div>
-                            <div className='bg-blue-100 p-5 rounded-lg'>
+                            <div className='graphs bg-blue-100 p-5 rounded-lg'>
                                 <div className='text-left text-2xl font-csans'>Overview</div>
                                 <div className='pl-12 py-5'>
                                     <div className=''>Avarage Quiz Peformace</div>
@@ -132,7 +133,7 @@ export default function Module({ no, modulesetter }) {
 
                     {//for displaing pdf Documents
                     }
-                    <div className={`${active === 2 ? "block" : "hidden"}`}>
+                    <div className={`${active === 2 ? "block" : "hidden"} overflow-x-auto`}>
                         <table className='w-full'>
                             <tr className='text-black font-bold bg-slate-300 rounded-lg'>
                                 <td className='px-5 py-5'>PDF Name</td>
@@ -170,7 +171,7 @@ export default function Module({ no, modulesetter }) {
 
                     {//for displaing Reciording Links
                     }
-                    <div className={`${active === 3 ? "block" : "hidden"}`}>
+                    <div className={`${active === 3 ? "block" : "hidden"} overflow-x-auto`}>
                         <table className='w-full'>
                             <tr className='text-black font-bold bg-slate-300 rounded-lg'>
                                 <td className='px-5 py-5'>Video Name</td>
@@ -215,8 +216,8 @@ export default function Module({ no, modulesetter }) {
 
                     {//for displaing pdf practicals
                     }
-                    <div className={`${active === 4 ? "block" : "hidden"}`}>
-                        <table className='w-full'>
+                    <div className={`${active === 4 ? "block" : "hidden"} w-full overflow-x-auto `}>
+                        <table className='w-full overflow-x-auto'>
                             <tr className='text-black font-bold bg-slate-300 rounded-lg'>
                                 <td className='px-5 py-5'>Practical Name</td>
                                 <td className='px-5'>Submitted Date</td>
@@ -255,7 +256,7 @@ export default function Module({ no, modulesetter }) {
 
                     {//for displaing Forms
                     }
-                    <div className={`${active === 5 ? "block" : "hidden"}`}>
+                    <div className={`${active === 5 ? "block" : "hidden"} overflow-x-auto`}>
                         
                         <div className='bg-blue-100 px-5 py-5'>
                             <div className='text-2xl font-csans font-semibold'>Submit Your Question</div>
@@ -263,7 +264,7 @@ export default function Module({ no, modulesetter }) {
                             <div className='mt-5 py-2 px-5 bg-blue-600 rounded-lg hover:scale-105 duration-300 w-fit text-white'>POST</div>
                         </div>
                         <div className='w-full h-c45 mt-5 bg-blue-100 overflow-auto rounded-lg p-5'>
-                            <table className='w-full'>
+                            <table className='w-full overflow-x-auto'>
                             <tr className='bg-gray-300'>
                                     <td className='py-4 text-xl font-bold text-center'>Question</td>
                                     <td className='py-4 text-xl font-bold'> Answer</td>

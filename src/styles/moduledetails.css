@@ -1,0 +1,44 @@
+.counts{grid-area: cnt;}
+.graphs{grid-area: grp;}
+
+@media(min-width:801px){
+    .lessonsum{
+        width: 100%;
+        display: grid;
+        grid-template-areas: "cnt grp";
+        grid-gap: 5em;
+    }
+}
+
+
+
+@media(max-width:800px){
+    /*.utopic{
+        font-size: 27px;
+    }*/
+    .lessonsum{
+        width: 100%;
+        display: grid;
+        grid-template-areas: "cnt" "grp";
+    
+    }
+    .topback{display: none;}
+    .containers{
+        display: block;
+    }
+    .modulenavigaor{
+        text-align: center;
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+    }
+    .subtp{
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: inline-block;
+    }
+    .displaycontentsofcourses{
+        width: 100%;
+    }
+}

@@ -29,7 +29,7 @@ export default function Courses() {
     }
   }
   return (
-    <div className='mx-2'>
+    <div className='mx-0'>
       <div className={`${modulevisible ? "hidden" : "block"} font-csans text-4xl pl-16 py-5 w-full bg-white fixed shadow-sm shadow-gray-100`}>My Courses</div>
 
       <div className={`${modulevisible ? "hidden" : "flex"} pt-24  flex-wrap gap-10`}>
@@ -49,7 +49,7 @@ export default function Courses() {
           return res
         })()}
       </div>
-      <div className={`${!modulevisible && "scale-0"} pt-32`}>
+      <div className={`${!modulevisible && "scale-0"} pt-20`}>
         <Module no={modelno} modulesetter={modulesetter}/>
       </div>
 
