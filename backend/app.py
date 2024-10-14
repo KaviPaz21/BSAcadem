@@ -52,7 +52,7 @@ def datastoring( query , data):
         course.close()
         conn.close()
         return True
-    return False
+
 
 
 
@@ -93,7 +93,20 @@ def chat():
 #*****************************************Administration Routes***************************************************************************
 #------------------------------------------------------------------------------------------------------------------------------------------
 
+def dataretrieve( query , data):
+    if conn:
+        cursor = conn.cursor()
+        cursor.execute(query , (data))
+        rows = cursor.fetchall()
+        cursor.close()
+        conn.close()
+        return rows
+    
 
+
+
+
+#inserting students (registration)
 @app.route("/register_students" , methods =["POST"])
 def Register():
     datas = request.get_json()
@@ -123,6 +136,25 @@ def Register():
         print("insetion fail")
         return jsonify({"msg":"fail"}),500
 
+
+
+
+
+#------------Query data retrival of students---------------------
+
+@app.route("/find_students" , methods=["POST"])
+def studentsfind():
+    data = request.get_json()
+    finder = data.get("finder")
+    key = data.get("key")
+
+    if finder == "2":
+        print("yay")
+        query = "SELECT nic , initials , alyear , classname FROM students WHERE usercluster = (?)"
+        outputs = dataretrieve(query , key)
+        print(outputs[0])
+        
+        return jsonify({"id":outputs[0][0] , "name":outputs[0][1] , "al":outputs[0][2] , "hall":outputs[0][3]})
 
 
 
